@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.stat-value {
+    @apply text-red-300 bg-gray-900 p-1 font-mono;
+}

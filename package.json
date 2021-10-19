@@ -1,0 +1,40 @@
+{
+    "name": "apple-health",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "scripts": {
+        "build": "npm-run-all --parallel build:*",
+        "build:js": "rollup --config rollup.config.js",
+        "build:css": "postcss css/app.css -o app.min.css",
+        "watch:js": "rollup --config rollup.config.js --watch",
+        "watch:css": "postcss --watch css/app.css -o app.min.css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/cli": "^7.15",
+        "@babel/core": "^7.15",
+        "@babel/preset-env": "^7.15",
+        "@babel/register": "^7.15",
+        "@rollup/plugin-babel": "^5.3",
+        "@rollup/plugin-commonjs": "^21.0",
+        "@rollup/plugin-json": "^4.1.0",
+        "@rollup/plugin-node-resolve": "^13.0",
+        "autoprefixer": "^10.3",
+        "chart.js": "^3.5.1",
+        "chartjs-adapter-luxon": "^1.1.0",
+        "chartjs-plugin-zoom": "^1.1.1",
+        "core-js": "^3.18",
+        "luxon": "^2.0.2",
+        "npm-run-all": "^4.1",
+        "postcss": "^8.3",
+        "postcss-cli": "^9.0",
+        "postcss-minify": "^1.1",
+        "rollup": "^2.58",
+        "rollup-plugin-terser": "^7.0",
+        "tailwindcss": "^2.2"
+    }
+}

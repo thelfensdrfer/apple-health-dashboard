@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Apple Health Dashboard</title>
+
+    <link rel="stylesheet" href="./app.min.css" />
+</head>
+<body>
+    <div class="max-w-4xl mt-4 mx-auto">
+        <h1 class="font-bold text-xl">Apple Health Dashboard</h1>
+
+
+        <h3 class="font-bold uppercase">Line Chart</h3>
+        <canvas id="chart-line" class="mb-8 w-full h-32"></canvas>
+
+        <h3 class="font-bold uppercase">Histogram Default</h3>
+        <canvas id="chart-hist-default" class="mb-8 w-full h-32"></canvas>
+
+        <h3 class="font-bold uppercase">Histogram Sqrt</h3>
+        <canvas id="chart-hist-sqrt" class="mb-8 w-full h-32"></canvas>
+
+        <h3 class="font-bold uppercase">Histogram Log</h3>
+        <canvas id="chart-hist-log" class="mb-8 w-full h-32"></canvas>
+
+        <p class="mt-8">
+            Mean: <span class="stat-value" id="stats-mean"></span>
+        </p>
+        <p class="bold mt-3">
+            Median: <span class="stat-value" id="stats-median"></span>
+        </p>
+        <p class="bold mt-3">
+            P-95: <span class="stat-value" id="stats-q-95"></span>
+        </p>
+        <p class="bold mt-3">
+            P-99: <span class="stat-value" id="stats-q-99"></span>
+        </p>
+        <p class="bold mt-3">
+            P-99 - P-01: <span class="stat-value" id="stats-q-range"></span>
+        </p>
+    </div>
+
+    <script src="./app.min.js"></script>
+</body>
+</html>
