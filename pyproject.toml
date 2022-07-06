@@ -8,7 +8,7 @@ authors = ["Tim Helfensdörfer <tim@visualappeal.de>"]
 python = "^3.8"
 jupyter = "^1.0.0"
 pandas = "^1.3.3"
-lxml = "^4.6.5"
+lxml = "^4.9.1"
 
 [tool.poetry.dev-dependencies]
 
