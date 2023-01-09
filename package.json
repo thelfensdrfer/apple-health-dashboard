@@ -28,7 +28,7 @@
         "chartjs-adapter-luxon": "^1.1.0",
         "chartjs-plugin-zoom": "^1.1.1",
         "core-js": "^3.18",
-        "luxon": "^2.0.2",
+        "luxon": "^2.5.2",
         "npm-run-all": "^4.1",
         "postcss": "^8.3",
         "postcss-cli": "^9.0",
